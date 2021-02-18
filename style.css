@@ -57,7 +57,8 @@ svg {
 }
 .sliders button,
 .close-save,
-.close-library {
+.close-library,
+.delete-library {
   position: absolute;
   top: 0;
   right: 0;
@@ -95,7 +96,8 @@ svg {
 }
 .library-panel,
 .generate-panel,
-.save-panel {
+.save-panel,
+.delete-panel {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -122,7 +124,8 @@ input[type='range'] {
 
 .copy-container,
 .save-container,
-.library-container {
+.library-container,
+.delete-container {
   position: fixed;
   top: 0%;
   left: 0%;
@@ -138,7 +141,8 @@ input[type='range'] {
 }
 .copy-popup,
 .save-popup,
-.library-popup {
+.library-popup,
+.delete-popup {
   background: white;
   display: flex;
   flex-direction: column;
@@ -152,19 +156,22 @@ input[type='range'] {
 }
 .copy-popup h4,
 .save-popup h4,
-.library-popup h4 {
+.library-popup h4,
+.delete-popup h4 {
   font-size: 2rem;
   padding: 2rem;
 }
 .copy-container.active,
 .save-container.active,
-.library-container.active {
+.library-container.active,
+.delete-container.active {
   opacity: 1;
   pointer-events: all;
 }
 .copy-popup.active,
 .save-popup.active,
-.library-popup.active {
+.library-popup.active,
+.delete-popup.active {
   transform: translateY(0rem);
 }
 
@@ -173,7 +180,8 @@ input[type='range'] {
   padding: 1rem;
 }
 .close-save,
-.close-library {
+.close-library,
+.delete-library {
   border-top-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
   padding: 0.5rem;
