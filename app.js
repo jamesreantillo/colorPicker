@@ -218,6 +218,7 @@ const closeLibraryBtn = document.querySelector('.close-library');
 const deleteStorageContainer = document.querySelector('.delete-container');
 const deleteBtn = document.querySelector('.delete');
 const deleteBtnLibrary = document.querySelector('.delete-library');
+// const customPalette = document.querySelectorAll('.library-popup');
 
 //Event Listeners
 saveBtn.addEventListener('click', openPalette);
@@ -232,6 +233,7 @@ function deleteLocalStorage() {
   const popup = deleteStorageContainer.children[0];
   deleteStorageContainer.classList.add('active');
   popup.classList.add('active');
+  // customPalette.removeChild(customPalette.childNodes[5]);
   localStorage.clear();
 }
 
